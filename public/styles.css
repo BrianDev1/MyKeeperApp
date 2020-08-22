@@ -14,7 +14,6 @@ body {
 }
 
 header {
-    /*background-color: #434343;*/
     background-image: linear-gradient(to right, #000000, #434343);
     margin: auto -16px;
     padding: 16px 32px;
@@ -42,11 +41,13 @@ footer p {
 .note {
     background: #fff;
     border-radius: 7px;
+    border-color: #434343;
     box-shadow: 0 2px 5px #ccc;
     padding: 10px;
-    width: 240px;
+    width: 20%;
     margin: 16px;
     float: left;
+    
 }
 
 .note h1 {
@@ -59,4 +60,15 @@ footer p {
     margin-bottom: 10px;
     white-space: pre-wrap;
     word-wrap: break-word;
+}
+
+.note button {
+    text-transform: uppercase;
+    color: #3dd1f2;
+    background-color: transparent;
+    border-color: transparent;
+    vertical-align: sub;
+    margin: 5px;
+    float: right;
+   
 }
