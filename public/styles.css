@@ -41,13 +41,11 @@ footer p {
 .note {
     background: #fff;
     border-radius: 7px;
-    border-color: #434343;
     box-shadow: 0 2px 5px #ccc;
     padding: 10px;
     width: 20%;
     margin: 16px;
     float: left;
-    
 }
 
 .note h1 {
@@ -70,5 +68,38 @@ footer p {
     vertical-align: sub;
     margin: 5px;
     float: right;
-   
+}
+
+.addnote {
+    background-color: white;
+    border-radius: 7px;
+    box-shadow: 0 2px 5px #ccc;
+    float: right;
+    bottom: 0;
+    width: 25%;
+    margin: 15px;
+    position: relative;
+}
+
+.addnote input {
+    width: 90%;
+    height: 25px;
+    border: 0px;
+    margin: 15px;
+    border-radius: 5px;
+}
+
+.addnote textarea {
+    width: 90%;
+    border: 0px;
+    margin: 15px;
+    border-radius: 5px;
+}
+
+.addnotebutton {
+    vertical-align: sub;
+    position: inherit;
+    float: right;
+    margin: 30px;
+    
 }

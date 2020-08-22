@@ -3,7 +3,7 @@ import Header from "./Header";
 import Footer from "./Footer";
 import Note from "./Note";
 import notes from "../notes";
-
+import Addnote from "./Addnote";
 
 function App() {
     return (
@@ -21,6 +21,7 @@ function App() {
                             note.content
                         }
                         /> )}
+            <Addnote />
             <Footer />
         </div>
     );
