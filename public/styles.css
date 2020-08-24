@@ -64,42 +64,46 @@ footer p {
     text-transform: uppercase;
     color: #3dd1f2;
     background-color: transparent;
-    border-color: transparent;
+    border: none;
+    outline: none;
     vertical-align: sub;
     margin: 5px;
     float: right;
+    cursor: pointer;
 }
 
-.addnote {
+form {
     background-color: white;
     border-radius: 7px;
-    box-shadow: 0 2px 5px #ccc;
-    float: right;
-    bottom: 0;
+    box-shadow: 0 1px 5px rgb(138, 137, 137);
     width: 25%;
-    margin: 15px;
+    padding: 15px;
     position: relative;
+    margin: 30px auto 20px auto;
 }
 
-.addnote input {
+form input, textarea {
     width: 90%;
-    height: 25px;
-    border: 0px;
-    margin: 15px;
+    border: none;
+    outline: none;
+    padding: 5px;
     border-radius: 5px;
+    font-family: inherit;
+    resize: none;
+    font-size: 1.2em;
 }
 
-.addnote textarea {
-    width: 90%;
-    border: 0px;
-    margin: 15px;
-    border-radius: 5px;
-}
-
-.addnotebutton {
-    vertical-align: sub;
-    position: inherit;
-    float: right;
-    margin: 30px;
-    
+form button {
+    position: absolute;
+    right: 18px;
+    bottom: -18px;
+    background-image: linear-gradient(to right, #000000, #434343);
+    color: #fff;
+    border: none;
+    border-radius: 50%;
+    width: 45px;
+    height: 45px;
+    box-shadow: 0 1px 3px rgba(0, 0, 0, 0.3);
+    cursor: pointer;
+    outline: none;
 }

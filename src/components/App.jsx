@@ -1,18 +1,35 @@
-import React from "react";
+import React, {useState} from "react";
 import Header from "./Header";
 import Footer from "./Footer";
 import Note from "./Note";
-import notes from "../notes";
 import Addnote from "./Addnote";
 
 function App() {
+
+    const [noteArray, setNoteArray] = useState([]);
+
+
+    function addNotes(aNote) {
+        console.log(aNote);
+        console.log(noteArray);
+        setNoteArray(
+            (previousNotes) => {
+               return [...previousNotes, aNote];
+            }
+        );
+       
+
+    }
+
+
     return (
         <div>
             <Header />
+            <Addnote onAddNoteClicked={addNotes}/>
             {
-                notes.map(note => <Note 
+                noteArray.map((note, index) => <Note 
                         key = {
-                            note.key
+                            note.index
                         }
                         title = {
                             note.title
@@ -20,8 +37,7 @@ function App() {
                         content={
                             note.content
                         }
-                        /> )}
-            <Addnote />
+                        /> )}    
             <Footer />
         </div>
     );
