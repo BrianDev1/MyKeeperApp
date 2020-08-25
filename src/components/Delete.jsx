@@ -1,10 +1,14 @@
 import React from "react";
 
 
-function Delete() {
+function Delete(props) {
+
+    function handleClick() {
+        props.onDeleteClicked(props.id);
+    }
 
     return (
-        <button>delete</button>
+        <button onClick={handleClick}>delete</button>
     );
 
 }

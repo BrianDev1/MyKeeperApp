@@ -10,8 +10,7 @@ function Addnote(props) {
     
 
     function handleNote(event) {
-        console.log(aNote)
-        const { name, value} = event.target;
+        const { name, value } = event.target;
         setNote((previousValue) => {
            return  {
                ...previousValue,

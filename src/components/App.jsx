@@ -8,19 +8,22 @@ function App() {
 
     const [noteArray, setNoteArray] = useState([]);
 
-
     function addNotes(aNote) {
-        console.log(aNote);
-        console.log(noteArray);
         setNoteArray(
             (previousNotes) => {
                return [...previousNotes, aNote];
             }
         );
-       
-
     }
 
+    function handleDelete(id) {
+        setNoteArray((previousNotes) => {
+            return previousNotes.filter((aNote, index) => {
+                return index !== id;
+            } );
+        });
+
+    }
 
     return (
         <div>
@@ -29,7 +32,10 @@ function App() {
             {
                 noteArray.map((note, index) => <Note 
                         key = {
-                            note.index
+                            index
+                        }
+                        id = {
+                            index
                         }
                         title = {
                             note.title
@@ -37,7 +43,10 @@ function App() {
                         content={
                             note.content
                         }
-                        /> )}    
+                        onDeleteClicked={
+                            handleDelete
+                        }
+                        /> )} 
             <Footer />
         </div>
     );

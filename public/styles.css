@@ -72,6 +72,10 @@ footer p {
     cursor: pointer;
 }
 
+.note button:hover {
+    border-bottom: 1px solid black;
+}
+
 form {
     background-color: white;
     border-radius: 7px;

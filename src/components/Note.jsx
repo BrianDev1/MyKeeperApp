@@ -8,7 +8,7 @@ function Note(props) {
         <div className="note">
             <h1>{props.title}</h1>
             <p>{props.content}</p>
-            <Delete />
+            <Delete id={props.id} onDeleteClicked={props.onDeleteClicked} />
         </div>
     );
 }
