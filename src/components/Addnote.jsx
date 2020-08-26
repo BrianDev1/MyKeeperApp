@@ -1,4 +1,6 @@
 import React, {useState} from "react";
+import Fab from '@material-ui/core/Fab';
+import AddIcon from '@material-ui/icons/Add';
 
 function Addnote(props) {
 
@@ -29,10 +31,10 @@ function Addnote(props) {
 
     return (
         <div>
-        <form onSubmit={handleFormSubmit}>
+        <form onSubmit={handleFormSubmit} className="create-note">
         <input name="title" type="text" onChange={handleNote}  placeholder="Title" value={aNote.title} ></input>
             <textarea name="content" onChange={handleNote} rows="4" cols="50" placeholder="Description" value={aNote.content}></textarea>
-            <button type="submit" >Add</button>
+            <Fab type="submit" ><AddIcon /></Fab>
             </form>        
         </div>
         

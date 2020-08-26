@@ -62,7 +62,7 @@ footer p {
 
 .note button {
     text-transform: uppercase;
-    color: #3dd1f2;
+    color: #768e94;
     background-color: transparent;
     border: none;
     outline: none;
@@ -72,36 +72,31 @@ footer p {
     cursor: pointer;
 }
 
-.note button:hover {
-    border-bottom: 1px solid black;
-}
-
-form {
-    background-color: white;
+form.create-note {
+    position: relative;
+    width: 30%;
+    margin: 30px auto 20px auto;
+    background: #fff;
+    padding: 15px;
     border-radius: 7px;
     box-shadow: 0 1px 5px rgb(138, 137, 137);
-    width: 25%;
-    padding: 15px;
-    position: relative;
-    margin: 30px auto 20px auto;
 }
 
-form input, textarea {
-    width: 90%;
+form.create-note input, form.create-note textarea {
+    width: 100%;
     border: none;
+    padding: 4px;
     outline: none;
-    padding: 5px;
-    border-radius: 5px;
+    font-size: 1.2em;
     font-family: inherit;
     resize: none;
-    font-size: 1.2em;
 }
 
-form button {
+form.create-note button {
     position: absolute;
     right: 18px;
     bottom: -18px;
-    background-image: linear-gradient(to right, #000000, #434343);
+    background: #606968;
     color: #fff;
     border: none;
     border-radius: 50%;
